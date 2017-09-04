@@ -127,6 +127,14 @@ src="https://www.facebook.com/tr?id=1023461817756786&ev=PageView&noscript=1"
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
+  
+  $("a[href^='tel:']").on("click", function (e) {
+    _paq.push(['trackEvent', 'contactform', 'tel clicked', this.href]);
+  });
+
+  $("a[href^='mailto:']").on("click", function (e) {
+    _paq.push(['trackEvent', 'contactform', 'mailto clicked', this.href]);
+  });
 </script>
 <noscript><p><img src="//piwik.christhebaron.co.uk/piwik.php?idsite=3&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
