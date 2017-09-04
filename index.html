@@ -129,11 +129,11 @@ src="https://www.facebook.com/tr?id=1023461817756786&ev=PageView&noscript=1"
   })();
   
   $("a[href^='tel:']").on("click", function (e) {
-    _paq.push(['trackEvent', 'contactform', 'tel clicked', this.href]);
+    _paq.push(['setCustomDimension',2, this.href]);
   });
 
   $("a[href^='mailto:']").on("click", function (e) {
-    _paq.push(['trackEvent', 'contactform', 'mailto clicked', this.href]);
+    _paq.push(['setCustomDimension', 1, this.href]);
   });
 </script>
 <noscript><p><img src="//piwik.christhebaron.co.uk/piwik.php?idsite=3&rec=1" style="border:0;" alt="" /></p></noscript>
