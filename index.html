@@ -121,32 +121,21 @@ src="https://www.facebook.com/tr?id=1023461817756786&ev=PageView&noscript=1"
 <!-- DO NOT MODIFY -->
 <!-- End Facebook Pixel Code -->
 
-<!-- Piwik -->
+<!-- Matomo -->
 <script type="text/javascript">
-  var _paq = _paq || [];
+  var _paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-  _paq.push(["setCookieDomain", "*.digitalcopycentre.co.uk"]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="//piwik.christhebaron.co.uk/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '3']);
+    var u="//matomo.christhebaron.co.uk/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
-  
-  $("a[href^='tel:']").on("click", function (e) {
-    _paq.push(['trackEvent', 'contactform', 'tel clicked', this.href]);
-  });
-
-  $("a[href^='mailto:']").on("click", function (e) {
-    _paq.push(['trackEvent', 'contactform', 'mailto clicked', this.href]);
-  });
 </script>
-<noscript><p><img src="//piwik.christhebaron.co.uk/piwik.php?idsite=3&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
+<!-- End Matomo Code -->
 
 </body>
 </html>
