@@ -1,9 +1,14 @@
 body {
 
     padding-top: calc((100vh - 660px) / 2);
+    padding-bottom: 50px;
 
     color: white;
 
+}
+
+address {
+    margin-bottom: 0;
 }
 
 a {
@@ -36,6 +41,7 @@ img {
 
     body {
         padding-top: 0;
+        padding-bottom: 0;
     }
 
 }
